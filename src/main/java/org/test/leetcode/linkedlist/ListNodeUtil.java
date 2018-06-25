@@ -7,6 +7,12 @@ import java.util.Random;
  */
 public class ListNodeUtil {
 
+    /**
+     * 构建从1到length的顺序链表
+     *
+     * @param length
+     * @return
+     */
     public static ListNode buildLinkedList(Integer length) {
         ListNode tail = null;
         for (int i = length; i >= 1; i--) {
@@ -19,6 +25,12 @@ public class ListNodeUtil {
         return tail;
     }
 
+    /**
+     * 构建连接点是随机数的链表
+     *
+     * @param length
+     * @return
+     */
     public static ListNode buildRandomLinkedList(Integer length) {
         ListNode tail = null;
         Random random = new Random();
@@ -32,9 +44,12 @@ public class ListNodeUtil {
         return tail;
     }
 
-
-
-
+    /**
+     * 折叠链表
+     *
+     * @param listNode
+     * @return
+     */
     public static ListNode fold(ListNode listNode) {
 
         //先求长度，空间复杂度O(1), 时间复杂度 O(n)
@@ -72,6 +87,12 @@ public class ListNodeUtil {
         return result;
     }
 
+    /**
+     * 反转链表
+     *
+     * @param listNode
+     * @return
+     */
     public static ListNode reverse(ListNode listNode) {
         ListNode current = listNode;
         ListNode result = null;
@@ -84,6 +105,12 @@ public class ListNodeUtil {
         return result;
     }
 
+    /**
+     * 获取链表长度
+     *
+     * @param listNode
+     * @return
+     */
     public static Integer getSize(ListNode listNode) {
         ListNode node = listNode;
         int size = 0;

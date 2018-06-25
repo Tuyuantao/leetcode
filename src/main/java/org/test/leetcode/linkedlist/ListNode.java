@@ -16,7 +16,6 @@ public class ListNode {
             sb.append(node.val).append("->");
             node = node.next;
         }
-
         return sb.delete(sb.toString().length() - 2, sb.toString().length()).toString();
     }
 }
